@@ -6,6 +6,37 @@
 <meta name="description" content="Sheng Zhang&#39;s homepage">
 <link rel="stylesheet" href="./Homepage/style/jemdoc.css" type="text/css">
 <style type="text/css">
+.language-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.language-toggle button {
+  background: #ffffff;
+  border: 1px solid #b8c5d6;
+  border-radius: 16px;
+  color: #224b7a;
+  cursor: pointer;
+  padding: 6px 16px;
+}
+
+#layout-content {
+  position: relative;
+}
+
+.publication-bullet {
+  font-size: 18px;
+  padding-top: 6px;
+  position: relative;
+  right: 1.2em;
+  vertical-align: top;
+  width: 0;
+}
+
+.lang-en {
+  display: none;
+}
 </style>
 <title>Sheng Zhang</title>
 <link rel="shortcut icon" href="./Homepage/img/favicon.ico" >
@@ -14,6 +45,9 @@
 
 <body>
 <div id="layout-content" style="margin-top:25px">
+<div class="language-toggle">
+  <button type="button" id="language-toggle-button">English</button>
+</div>
 
 <table  border="0" width="100%"> <tbody>
   <tr>
@@ -25,7 +59,7 @@
        <br>
       <b><font face="Times New Roman" size="6">Sheng Zhang</font><font size="6" face="楷体_GB2312"> 张盛 </font><font face="Times New Roman" size="6"></font></b>
       <br><br>      
-      <p>       
+      <p class="lang-en">
           <br>
 	      Mesh Processing Algorithm Engineer, <a href="https://bambulab.cn/zh-cn" target="_blank">Bambu Lab</a> <br>
 	  <br>Email: zhangsheng0510@foxmail.com <br>
@@ -35,6 +69,16 @@
     <a href="https://leetcode.cn/u/shaneszhang/" target="_blank">LeetCode</a>
           <br>
       </p>
+      <p class="lang-zh">
+        <br>
+        网格处理算法工程师，<a href="https://bambulab.cn/zh-cn" target="_blank">拓竹科技</a> <br>
+        <br>邮箱：zhangsheng0510@foxmail.com <br>
+        <br>微信：shaneszhang <br>
+        <br>
+        <a href="https://github.com/shaneszhang" target="_blank">GitHub</a> ｜
+        <a href="https://leetcode.cn/u/shaneszhang/" target="_blank">LeetCode</a>
+        <br>
+      </p>
     </td>
   </tr>
 </tbody> </table>
@@ -42,28 +86,47 @@
 
 <table  border="0" width="100%"> <tbody>
    <tr>
-    <h2>Biography</h2>
-    <p style="text-align:justify;">
+    <h2 class="lang-en">Biography</h2>
+    <h2 class="lang-zh">个人简介</h2>
+    <p class="lang-en" style="text-align:justify;">
       I am currently a 3D Mesh Algorithm Engineer at <a href="https://bambulab.cn/zh-cn" target="_blank">Bambu Lab</a>.
       Before joining <a href="https://bambulab.cn/zh-cn" target="_blank">Bambu Lab</a>, I was a Geometric Algorithm Engineer at <a href="https://www.poissonsoft.com/" target="_blank">Poisson Software</a> and <a href="https://game.qq.com/web20220628txgame/index.html" target="_blank">Tencent Games</a>.
       I obtained my M.S. degree in Computer Science and Technology at <a href="https://www.hdu.edu.cn/">Hangzhou Dianzi University</a> supervised by Prof. <a href="https://faculty.hdu.edu.cn/jsjxy/xg/main.htm">Gang Xu</a> in 2024.
     </p>
+    <p class="lang-zh" style="text-align:justify;">
+      我目前在 <a href="https://bambulab.cn/zh-cn" target="_blank">拓竹科技</a> 担任 3D 网格算法工程师。
+      在加入 <a href="https://bambulab.cn/zh-cn" target="_blank">拓竹科技</a> 之前，我曾在 <a href="https://www.poissonsoft.com/"
+        target="_blank">泊松软件</a> 和 <a href="https://game.qq.com/web20220628txgame/index.html" target="_blank">腾讯游戏</a>
+      担任几何算法工程师。
+      我于 2024 年在 <a href="https://www.hdu.edu.cn/">杭州电子科技大学</a> 获得计算机科学与技术学术硕士学位，导师为<a
+        href="https://faculty.hdu.edu.cn/jsjxy/xg/main.htm">徐岗</a>教授。
+    </p>
   </tr>
-    <h2>Research Interest </h2>
-    <li> 3D Printing. </li>
-    <li> Mesh Generation and Processing. </li>
-    <li> Geometric Modeling. </li>
-    <li> Computer Graphics. </li>
+    <h2 class="lang-en">Research Interest</h2>
+    <h2 class="lang-zh">研究兴趣</h2>
+    <div class="lang-en">
+      <li> 3D Printing. </li>
+      <li> Mesh Generation and Processing. </li>
+      <li> Geometric Modeling. </li>
+      <li> Computer Graphics. </li>
+    </div>
+    <div class="lang-zh">
+      <li> 3D 打印。 </li>
+      <li> 网格生成与处理。 </li>
+      <li> 几何建模。 </li>
+      <li> 计算机图形学。 </li>
+    </div>
 </tbody></table>
 
 <table border="0" width="100%">
   <tbody>
-    <h2>Thesis</h2>
+    <h2 class="lang-en">Thesis</h2>
+    <h2 class="lang-zh">学位论文</h2>
 
     <!-- Research on Hexahedral Mesh Generation Based on Medial Mesh -->
     <tr>
       <td>
-        <div align="center">
+        <div align="left">
           <img width="250" src="./Thesis/thesis_title.png" alt="">
         </div>
       </td>
@@ -82,10 +145,59 @@
 </table>
 
 <table  border="0" width="100%"> <tbody>
-<h2>Publications</h2>
+<h2 class="lang-en">Open Source</h2>
+<h2 class="lang-zh">开源项目</h2>
+
+<div class="lang-en">
+  <li>
+    <a href="https://github.com/shaneszhang/BambuStudio" target="_blank"><strong>BambuStudio</strong></a>:
+    PC software for Bambu Lab and other 3D printers.
+  </li>
+  <li>
+    <a href="https://github.com/shaneszhang/Medial-HexMeshing" target="_blank"><strong>Medial-HexMeshing</strong></a>:
+    Medial hex-meshing: high-quality all-hexahedral mesh generation based on medial mesh.
+  </li>
+  <li>
+    <a href="https://github.com/shaneszhang/Huawei-CodeCraft2024"
+      target="_blank"><strong>Huawei-CodeCraft2024</strong></a>:
+    Code for the 2024 Huawei Software Elite Challenge finals team "麦麦随心配队".
+  </li>
+  <li>
+    <a href="https://github.com/shaneszhang/Huawei-ICT2023" target="_blank"><strong>Huawei-ICT2023</strong></a>:
+    Code for the algorithm track of the 2023 Huawei Embedded Software Competition.
+  </li>
+</div>
+
+<div class="lang-zh">
+  <li>
+    <a href="https://github.com/shaneszhang/BambuStudio" target="_blank"><strong>BambuStudio</strong></a>：
+    Bambu Lab 及其他 3D 打印机的 PC 软件。
+  </li>
+  <li>
+    <a href="https://github.com/shaneszhang/Medial-HexMeshing" target="_blank"><strong>Medial-HexMeshing</strong></a>：
+    基于中轴网格的高质量全六面体网格生成。
+  </li>
+  <li>
+    <a href="https://github.com/shaneszhang/Huawei-CodeCraft2024"
+      target="_blank"><strong>Huawei-CodeCraft2024</strong></a>：
+    2024 华为软件精英挑战赛 “麦麦随心配队” 总决赛参赛代码。
+  </li>
+  <li>
+    <a href="https://github.com/shaneszhang/Huawei-ICT2023" target="_blank"><strong>Huawei-ICT2023</strong></a>：
+    2023 华为嵌入式软件大赛算法组参赛代码。
+  </li>
+</div>
+</tbody>
+</table>
+
+<table border="0" width="100%">
+  <tbody>
+    <h2 class="lang-en">Publications</h2>
+    <h2 class="lang-zh">发表论文</h2>
 
 <!-- Medial hex-meshing: high-quality all-hexahedral mesh generation based on medial mesh -->
 <tr>
+  <td class="publication-bullet">&bull;</td>
   <td>
     <div align="left">
       <img width="200" src="./MedialHexMeshing/SweepGallery.png" alt="">
@@ -104,6 +216,7 @@
 
 <!-- 基于线面混合骨架与形状分解技术的多立方体构造方法 -->
 <tr>
+  <td class="publication-bullet">&bull;</td>
   <td>
     <div align="left">
       <img width="200" src="./MedialHexMeshing/PolyCubeAligning.png" alt="">
@@ -126,5 +239,32 @@
 </tbody> </table>       
 
 </div>
+<script type="text/javascript">
+  (function () {
+    var currentLanguage = "zh";
+    var toggleButton = document.getElementById("language-toggle-button");
+    var englishBlocks = document.getElementsByClassName("lang-en");
+    var chineseBlocks = document.getElementsByClassName("lang-zh");
+
+    function setLanguage(language) {
+      currentLanguage = language;
+      var showChinese = language === "zh";
+
+      for (var i = 0; i < englishBlocks.length; i++) {
+        englishBlocks[i].style.display = showChinese ? "none" : "block";
+      }
+
+      for (var j = 0; j < chineseBlocks.length; j++) {
+        chineseBlocks[j].style.display = showChinese ? "block" : "none";
+      }
+
+      toggleButton.innerHTML = showChinese ? "English" : "中文";
+    }
+
+    toggleButton.onclick = function () {
+      setLanguage(currentLanguage === "en" ? "zh" : "en");
+    };
+  })();
+</script>
 </body>
 </html>
